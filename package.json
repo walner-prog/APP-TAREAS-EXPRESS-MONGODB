@@ -8,14 +8,14 @@
     "start": "node src/index.js",
     "dev": "nodemon src/index.js"
   },
- "keywords": [
+  "keywords": [
     "express",
     "jwt",
     "mongodb",
     "api",
     "nodejs"
   ],
-"author": "Walner",
+  "author": "Walner",
   "license": "MIT",
   "dependencies": {
     "bcryptjs": "^3.0.2",
@@ -25,7 +25,9 @@
     "joi": "^17.13.3",
     "jsonwebtoken": "^9.0.0",
     "mongoose": "^7.0.3",
-    "node-fetch": "^3.3.2"
+    "node-fetch": "^3.3.2",
+    "swagger-ui-express": "^5.0.1",
+    "yamljs": "^0.3.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.22"
