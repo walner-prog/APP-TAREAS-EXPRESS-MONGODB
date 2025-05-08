@@ -4,10 +4,10 @@ info:
   description: API backend con Node.js, Express, MongoDB y JWT
   version: 1.0.0
 servers:
-  - url: http://localhost:3001
-
+  - url: https://app-tareas-express-mongodb.onrender.com/api
+    description: Servidor de producción
 paths:
-  /api/register:
+  /auth/register:
     post:
       summary: Registrar un nuevo usuario
       requestBody:
@@ -30,7 +30,7 @@ paths:
         '400':
           description: Error de validación
 
-  /api/login:
+  /auth/login:
     post:
       summary: Iniciar sesión
       requestBody:
@@ -97,7 +97,7 @@ paths:
         '404':
           description: No encontrada
 
-    put:
+    patch:
       summary: Actualizar tarea por ID
       security:
         - bearerAuth: []
@@ -139,6 +139,6 @@ paths:
 components:
   securitySchemes:
     bearerAuth:
-      type: http
+      type: https 
       scheme: bearer
       bearerFormat: JWT
