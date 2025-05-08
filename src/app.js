@@ -16,6 +16,6 @@ swaggerDocs(app);
 // Configurar rutas
 app.use('/auth', authRoutes);
 app.use('/users', userRoutes);
-app.use('/task', taskRoutes);
+app.use('/api/task', taskRoutes);
 
 export default app 
