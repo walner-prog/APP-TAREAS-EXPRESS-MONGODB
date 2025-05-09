@@ -51,7 +51,7 @@ paths:
         '401':
           description: Credenciales inválidas
 
-  tasks:
+  /tasks:
     get:
       summary: Obtener tareas del usuario autenticado
       security:
