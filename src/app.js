@@ -14,7 +14,7 @@ app.use(express.json());
 swaggerDocs(app);
 
 // Configurar rutas
-app.use('/auth', authRoutes);
+app.use('/api/auth', authRoutes);
 app.use('/users', userRoutes);
 app.use('/api/task', taskRoutes);
 
