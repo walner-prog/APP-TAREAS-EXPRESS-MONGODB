@@ -51,7 +51,7 @@ paths:
         '401':
           description: Credenciales inválidas
 
-  /tasks:
+  /task:
     get:
       summary: Obtener tareas del usuario autenticado
       security:
@@ -80,7 +80,7 @@ paths:
         '201':
           description: Tarea creada
 
-  /api/tasks/{id}:
+  /task/{id}:
     get:
       summary: Obtener una tarea por ID
       security:
@@ -97,7 +97,7 @@ paths:
         '404':
           description: No encontrada
 
-    patch:
+    /task/patch:
       summary: Actualizar tarea por ID
       security:
         - bearerAuth: []
@@ -122,7 +122,7 @@ paths:
         '200':
           description: Tarea actualizada
 
-    delete:
+    /task/delete:
       summary: Eliminar tarea
       security:
         - bearerAuth: []
@@ -139,6 +139,6 @@ paths:
 components:
   securitySchemes:
     bearerAuth:
-      type: https 
+      type: http
       scheme: bearer
       bearerFormat: JWT
