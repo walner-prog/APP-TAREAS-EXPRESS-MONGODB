@@ -97,7 +97,7 @@ paths:
         '404':
           description: No encontrada
 
-    /task/patch:
+    patch:
       summary: Actualizar tarea por ID
       security:
         - bearerAuth: []
@@ -122,7 +122,7 @@ paths:
         '200':
           description: Tarea actualizada
 
-    /task/delete:
+    delete:
       summary: Eliminar tarea
       security:
         - bearerAuth: []
